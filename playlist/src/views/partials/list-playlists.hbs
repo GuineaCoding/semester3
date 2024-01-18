@@ -1,7 +1,19 @@
 {{#each playlists}}
-  <div class="box box-link-hover-shadow">
-    <h2 class="title">
-      {{title}}
-    </h2>
-  </div>
+<div class="box box-link-hover-shadow">
+  <h2 class="title">
+    {{title}}
+  </h2>
+  <a href="/playlist/{{_id}}" class="button">
+    <span class="icon is-small">
+      <i class="fas fa-folder-open"></i>
+    </span>
+  </a>
+<form method="POST" action="/dashboard/deletePlaylist/{{_id}}">
+  <button type="submit" class="button">
+    <span class="icon is-small">
+      <i class="fa fa-trash"></i>
+    </span>
+  </button>
+</form>
+</div>
 {{/each}}
