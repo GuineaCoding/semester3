@@ -20,6 +20,7 @@ export const webRoutes = [
   { method: "GET", path: "/playlist/{id}", config: playlistController.index },
   { method: "POST", path: "/playlist/{id}/addtrack", config: playlistController.addTrack },
   { method: "POST", path: "/playlist/{id}/deleteTrack", config: playlistController.deleteTrack },
+  
 
 
 ];

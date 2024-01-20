@@ -30,6 +30,7 @@ export const playlistController = {
       const playlist = await db.playlistStore.getPlaylistById(request.params.id);
       const trackId = playlist.track._id;
       console.log(trackId)
+      const track2 =  request.params.id;
       await db.trackStore.deleteTrack(trackId);
       return h.redirect(`/playlist/${playlist._id}`);
     },
