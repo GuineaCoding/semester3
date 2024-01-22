@@ -4,31 +4,27 @@
       <th>Track</th>
       <th>Artist</th>
       <th>Duration</th>
-      <th>Delete</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     {{#each playlist.tracks}}
-    <tr>
-      <td>
-        {{title}}
-      </td>
-      <td>
-        {{artist}}
-      </td>
-      <td>
-        {{duration}}
-      </td>
-      <td>
-        <form method="POST" action="/playlist/{{_id}}/deleteTrack">
-          <button type="submit" class="button">
-            <span class="icon is-small">
-              <i class="fa fa-trash"></i>
-            </span>
-          </button>
-        </form>
-      </td>
-    </tr>
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{artist}}
+        </td>
+        <td>
+          {{duration}}
+        </td>
+        <td>
+          <a href="/playlist/{{../playlist._id}}/deletetrack/{{_id}}" class="ui icon button">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
     {{/each}}
   </tbody>
 </table>
