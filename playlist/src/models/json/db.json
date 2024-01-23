@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "firstName": "wrewr",
+      "lastName": "rewrew",
+      "email": "andrianwix@gmail.com",
+      "password": "12345",
+      "_id": "9f1af72a-1a13-4ef9-8e18-bdbead13df45"
+    }
+  ],
+  "playlists": [
+    {
+      "userid": "9f1af72a-1a13-4ef9-8e18-bdbead13df45",
+      "title": "wqewq",
+      "_id": "3ea0859c-e205-4a62-8472-95485eed0f2e"
+    }
+  ],
+  "tracks": []
+}

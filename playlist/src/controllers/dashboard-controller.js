@@ -5,8 +5,6 @@ export const dashboardController = {
     handler: async function (request, h) {
       const loggedInUser = request.auth.credentials;
       const playlists = await db.playlistStore.getUserPlaylists(loggedInUser._id);
-      const playlistId = request.params.id;
-      console.log(playlistId)
       const viewData = {
         title: "Playtime Dashboard",
         user: loggedInUser,
@@ -19,7 +17,6 @@ export const dashboardController = {
   addPlaylist: {
     handler: async function (request, h) {
       const loggedInUser = request.auth.credentials;
-      
       const newPlayList = {
         userid: loggedInUser._id,
         title: request.payload.title,
@@ -35,6 +32,5 @@ export const dashboardController = {
       await db.playlistStore.deletePlaylistById(playlist._id);
       return h.redirect("/dashboard");
     },
-  },
-  
+  }
 };
