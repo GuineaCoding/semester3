@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-unresolved
-import { JSONFilePreset } from "lowdb/node";
+import { JSONFilePreset } from "lowdb/lib/node";
 
 export const db = await JSONFilePreset("src/models/json/db.json", {
   users: [],

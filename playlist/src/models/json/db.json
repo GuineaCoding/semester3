@@ -1,19 +1,27 @@
 {
   "users": [
     {
-      "firstName": "wrewr",
-      "lastName": "rewrew",
-      "email": "andrianwix@gmail.com",
-      "password": "12345",
-      "_id": "9f1af72a-1a13-4ef9-8e18-bdbead13df45"
-    }
-  ],
-  "playlists": [
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "_id": "ff494c1a-c296-43e2-8db5-20cbcf83e46e"
+    },
     {
-      "userid": "9f1af72a-1a13-4ef9-8e18-bdbead13df45",
-      "title": "wqewq",
-      "_id": "3ea0859c-e205-4a62-8472-95485eed0f2e"
+      "firstName": "Marge",
+      "lastName": "Simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "_id": "52d997c7-6701-4978-bc20-564299d31a7c"
+    },
+    {
+      "firstName": "Bart",
+      "lastName": "Simpson",
+      "email": "bart@simpson.com",
+      "password": "secret",
+      "_id": "5c96a988-d002-4633-adab-3d4324aa232d"
     }
   ],
+  "playlists": [],
   "tracks": []
 }
